@@ -1,0 +1,101 @@
+# Preparation path. Keep its course registration draft until content is ready.
+apiVersion: content.astrona.io/v1alpha1
+kind: TrainingPath
+metadata:
+  id: ATP015
+  slug: opentelemetry-certified-associate-otca
+  title: OpenTelemetry Certified Associate (OTCA)
+  description: 'Preparation path for OTCA: one training series per curriculum domain. Content authoring
+    is planned.'
+  version: 0.1.0
+  language: en
+  authors:
+  - name: Paris Nakita Kejser
+    email: paris@astrona.io
+    company: Astrona.io
+  tags:
+  - OTCA
+  - Certification Preparation
+  license: Apache-2.0
+spec:
+  audience: Learners preparing for OpenTelemetry Certified Associate (OTCA).
+  difficulty: Beginner
+  examPreparation:
+    enabled: true
+    title: OpenTelemetry Certified Associate (OTCA)
+    officialSyllabusUrl: https://training.linuxfoundation.org/certification/opentelemetry-certified-associate-otca/
+    examId: OTCA
+    provider: CNCF / The Linux Foundation
+  prerequisites:
+  - Basic command-line knowledge and familiarity with the subject of the exam.
+  - A computer capable of running the environments selected during content authoring.
+  learningOutcomes:
+  - Prepare for the Fundamentals of Observability domain.
+  - Prepare for the The OpenTelemetry API and SDK domain.
+  - Prepare for the The OpenTelemetry Collector domain.
+  - Prepare for the Maintaining and Debugging Observability Pipelines domain.
+  stages:
+  - id: ATP015-STG001
+    title: Fundamentals of Observability
+    description: Prepare for Fundamentals of Observability.
+    examDomain: Fundamentals of Observability
+    weight: 18
+    learningOutcomes:
+    - Telemetry Data
+    - Semantic Conventions
+    - Instrumentation
+    - Analysis and Outcomes
+    content:
+    - ref: ATS073
+      repository: https://github.com/astrona-io/ATS073
+      path: .
+      version: 0.1.0
+  - id: ATP015-STG002
+    title: The OpenTelemetry API and SDK
+    description: Prepare for The OpenTelemetry API and SDK.
+    examDomain: The OpenTelemetry API and SDK
+    weight: 46
+    learningOutcomes:
+    - Data Model
+    - Composability and Extension
+    - Configuration
+    - Signals (Tracing, Metric, Log)
+    - SDK Pipelines
+    - Context Propagation
+    - Agents
+    content:
+    - ref: ATS074
+      repository: https://github.com/astrona-io/ATS074
+      path: .
+      version: 0.1.0
+  - id: ATP015-STG003
+    title: The OpenTelemetry Collector
+    description: Prepare for The OpenTelemetry Collector.
+    examDomain: The OpenTelemetry Collector
+    weight: 26
+    learningOutcomes:
+    - Configuration
+    - Deployment
+    - Scaling
+    - Pipelines
+    - Transforming Data
+    content:
+    - ref: ATS075
+      repository: https://github.com/astrona-io/ATS075
+      path: .
+      version: 0.1.0
+  - id: ATP015-STG004
+    title: Maintaining and Debugging Observability Pipelines
+    description: Prepare for Maintaining and Debugging Observability Pipelines.
+    examDomain: Maintaining and Debugging Observability Pipelines
+    weight: 10
+    learningOutcomes:
+    - Context Propagation
+    - Debugging Pipelines
+    - Error Handling
+    - Schema Management
+    content:
+    - ref: ATS076
+      repository: https://github.com/astrona-io/ATS076
+      path: .
+      version: 0.1.0
