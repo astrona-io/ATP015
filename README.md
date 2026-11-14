@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://astrona.io/courses/opentelemetry-certified-associate-otca">
+    <img src="https://astrona.io/courses/opentelemetry-certified-associate-otca/banner.svg" alt="OpenTelemetry Certified Associate: exam domains on Astrona" width="100%">
+  </a>
+</p>
+
 # ATP015 — OpenTelemetry Certified Associate (OTCA)
 
 Preparation scaffold: one stage per exam domain, connected through `path.yaml`
